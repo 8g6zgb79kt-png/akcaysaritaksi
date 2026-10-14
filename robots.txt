@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://akcaysaritaksi.com.tr/sitemap.xml
