@@ -2,6 +2,26 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) - Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16848605373"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-16848605373');
+  // Telefon ve WhatsApp düğmesi tıklamalarını Google Ads dönüşümü olarak say
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('tel:') === 0 || h.indexOf('https://wa.me/') === 0 || h.indexOf('https://api.whatsapp.com/') === 0) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16848605373/raWDCPi9s64dEL2hheI-',
+        'transport_type': 'beacon'
+      });
+    }
+  }, true);
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sarı Taksi · Akçay Taksi 7/24 · 0553 824 77 80</title>
 <link rel="canonical" href="https://akcaysaritaksi.com.tr/">
