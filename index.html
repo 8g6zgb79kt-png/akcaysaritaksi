@@ -32,7 +32,7 @@
 <meta property="og:description" content="Çarşıya, otogara, hastaneye, sahile ya da havalimanına. 0553 824 77 80">
 <meta property="og:url" content="https://akcaysaritaksi.com.tr/">
 <meta property="og:image" content="https://akcaysaritaksi.com.tr/kart.jpg">
-<meta name="theme-color" content="#FFC629">
+<meta name="theme-color" content="#0B0B0B">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TaxiService", "name": "Sarı Taksi", "telephone": "+90 553 824 77 80", "url": "https://akcaysaritaksi.com.tr/", "image": "https://akcaysaritaksi.com.tr/logo.png", "provider": {"@type": "LocalBusiness", "name": "Sarı Taksi", "telephone": "+90 553 824 77 80", "image": "https://akcaysaritaksi.com.tr/logo.png", "address": {"@type": "PostalAddress", "addressLocality": "Akçay, Edremit", "addressRegion": "Balıkesir", "addressCountry": "TR"}, "openingHours": "Mo-Su 00:00-23:59"}, "areaServed": ["Akçay", "Zeytinli", "Güre", "Altınkum", "Kızılkeçili", "Altınoluk", "Edremit", "Havran", "Burhaniye", "Ayvalık"]}</script>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}img{max-width:100%}[hidden]{display:none!important}.toptel{color:inherit;text-decoration:none}.toptel b{color:var(--yellow)}
 .btn-big{min-height:68px;font-size:1.25rem;box-shadow:0 10px 24px -10px rgba(0,0,0,.55)}
@@ -227,6 +227,61 @@ footer .num{font-family:var(--mono);color:#fff;font-size:1.1rem}
   section{padding-block:56px}
   .topbar .hide-sm{display:none}
 }
+
+/* ===== premium altın tema ===== */
+:root{--gold-1:#8A6414;--gold-2:#C8992E;--gold-3:#F1D488;--gold-4:#D9AE45;--gold-5:#9C7419;
+  --foil:linear-gradient(100deg,#B8892A 0%,#F6DE97 22%,#C99A33 42%,#FFF1BF 58%,#C3922B 78%,#8F6A1C 100%);
+  --metal:linear-gradient(135deg,#9E7420 0%,#C9A03E 22%,#EED48A 46%,#D7AC48 64%,#B0832A 82%,#8C6517 100%);
+  --ink:#121212;--bg:#F8F4EA;--line:#E6DCC2}
+body{background:var(--bg)}
+.topbar{background:#0B0B0B;border-bottom:1px solid rgba(214,174,69,.35)}
+.topbar b{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{background:var(--metal);color:#141210}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 70% at 30% 0%,rgba(255,250,225,.55),transparent 60%),
+  repeating-linear-gradient(115deg,rgba(255,255,255,.06) 0 2px,transparent 2px 7px);mix-blend-mode:soft-light}
+.hero .wrap{position:relative;z-index:1}
+.hero::after{height:3px;background:linear-gradient(90deg,transparent,#141210 20%,#141210 80%,transparent);opacity:.85}
+.hero h1{color:#141210;text-shadow:0 1px 0 rgba(255,240,190,.55),0 10px 30px rgba(80,55,0,.25)}
+.hero .eyebrow{color:rgba(20,18,16,.75);letter-spacing:.24em}
+.hero .lede{color:#1E1A12}
+.hero .badge{box-shadow:0 0 0 2px #141210,0 0 0 7px rgba(255,236,170,.55),0 0 0 8px rgba(20,18,16,.35),0 24px 40px -16px rgba(40,25,0,.7)}
+.btn-call{background:linear-gradient(180deg,#232323,#0A0A0A);color:#F3D57E;border:1px solid rgba(241,212,136,.55);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 14px 28px -12px rgba(0,0,0,.7)}
+.btn-call small{color:#E9DDB8}
+.btn-call svg{color:#F3D57E}
+.btn-call.btn-big{position:relative;overflow:hidden}
+@media (prefers-reduced-motion:no-preference){
+  .btn-call.btn-big::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;
+    background:linear-gradient(100deg,transparent,rgba(255,236,170,.28),transparent);animation:sheen 4.5s ease-in-out infinite}
+  @keyframes sheen{0%,60%{left:-60%}100%{left:130%}}
+}
+.btn-wa{box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 14px 28px -14px rgba(0,0,0,.55)}
+.ticket{background:linear-gradient(160deg,#1B1B1B,#0B0B0B);border:1px solid rgba(241,212,136,.45);
+  box-shadow:inset 0 0 0 4px #0B0B0B,inset 0 0 0 5px rgba(241,212,136,.18),0 40px 70px -30px rgba(40,25,0,.85)}
+.ticket h2,footer .brand{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ticket li::before,.roof i{background:var(--foil)}
+.ticket .route .arrow{background:var(--foil)}
+.ticket .route .arrow::after{border-left-color:#E8C770}
+.board{background:linear-gradient(180deg,#151515,#0B0B0B);border:1px solid rgba(214,174,69,.3)}
+.board td.num,.board .tag{color:#E9C46A}
+.board .tag{background:rgba(233,196,106,.12)}
+.sec-head h2,.svc h3,.step h3{letter-spacing:.02em}
+.sec-head h2::after{content:"";display:block;width:64px;height:3px;margin-top:14px;background:var(--metal);border-radius:2px}
+.svc{background:#FFFDF7;border-color:var(--line);box-shadow:0 1px 0 #fff inset,0 18px 40px -30px rgba(80,55,0,.45)}
+.svc .ico{background:var(--metal);color:#141210;box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.svc.feature{background:linear-gradient(160deg,#1A1A1A,#0B0B0B);border-color:rgba(214,174,69,.4)}
+.svc.feature h3{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+.svc.feature .chip{border-color:rgba(214,174,69,.4)}
+.step{border-top:0;position:relative}
+.step::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--metal);border-radius:2px}
+footer{background:#0B0B0B;border-top:1px solid rgba(214,174,69,.35)}
+.dock{background:rgba(11,11,11,.88);border-top:1px solid rgba(214,174,69,.35)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0F0E0C;--surface:#17150F;--line:#2E2919}
+  :root:not([data-theme="light"]) .svc:not(.feature){background:#17150F;box-shadow:none}}
+.book{background:radial-gradient(90% 80% at 85% 10%,rgba(214,174,69,.18),transparent 60%),linear-gradient(160deg,#171612,#0B0B0B)}
+.book h2{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+.book .form{border:1px solid rgba(214,174,69,.45);box-shadow:0 40px 70px -30px rgba(0,0,0,.8)}
 </style>
 </head>
 <body>
